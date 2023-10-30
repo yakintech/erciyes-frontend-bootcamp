@@ -1,3 +1,11 @@
 Box Model Video
 https://www.youtube.com/watch?v=dTUtsy54eP0
 
+CSS SELECTORS
+https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048t
+
+https://www.w3schools.com/cssref/css_selectors.php
+
+İki Kutu Yanyana Gelme 
+https://www.youtube.com/watch?v=OaEtW_CSaPk
+
