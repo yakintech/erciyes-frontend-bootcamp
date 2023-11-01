@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        .container {
             display: flex;
             justify-content: center;
             gap: 15px;
         }
-        .box{
+
+        @media only screen and (max-width: 800px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                flex-wrap: wrap;
+            }
+        }
+
+        .box {
             height: 375px;
             width: 270px;
             border-style: solid;
@@ -20,7 +30,8 @@
             flex-direction: column;
             align-items: center;
         }
-        .box img{
+
+        .box img {
             width: 100%;
         }
     </style>

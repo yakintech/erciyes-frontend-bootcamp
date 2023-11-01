@@ -9,3 +9,8 @@ https://www.w3schools.com/cssref/css_selectors.php
 İki Kutu Yanyana Gelme 
 https://www.youtube.com/watch?v=OaEtW_CSaPk
 
+
+
+FLEX
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://flexboxfroggy.com/
