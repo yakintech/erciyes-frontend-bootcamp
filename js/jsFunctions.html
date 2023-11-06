@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function kdvCalc(price) {
+        let totalPrice = price * 1.2
+        return totalPrice
+    }
+
+    var dataResult = kdvCalc(100)
+    console.log(dataResult)
+
+    //f(x) = 2x + 1
+
+    function kdVCalc2(price, tax = 1.1) {
+
+        var result = price * tax
+        return result
+    }
+
+    var data = kdVCalc2(200)
+    var data2 = kdVCalc2(200, 1.2)
+
+    console.log(data);
+    console.log(data2);
+
+
+
+    var calc = function (x, y) {
+        var result = x * y;
+        return result
+    }
+
+
+    var data3 = calc(10, 5)
+    console.log(data3);
+
+
+</script>
+
+</html>
