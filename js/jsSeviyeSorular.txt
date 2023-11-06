@@ -1,0 +1,9 @@
+250 ye kadar olan sayıların toplamı nedir? 
+25 ile 125 arasındaki sayıların toplamı nedir?
+1 ile 1000 Arasındaki Sayıların Toplamının ortalaması nedir?
+Birden yüze kadarki sayılardan, 5’e bölünenleri ekrana yazdırın
+
+
+var numbers = [33, 11, -5, 20, 1, 55, 100, 2, 94, 55, 11]
+Dizinin en büyük sayısıı for döngüsü ile bul
+Dizinin en küçük sayısıı for döngüsü ile bul
