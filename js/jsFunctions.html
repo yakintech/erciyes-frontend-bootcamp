@@ -46,6 +46,27 @@
     console.log(data3);
 
 
+
+    function calcNumbers(x, y, myFunc) {
+
+        var result = x * y * Math.PI;
+        result = result + 1
+
+        myFunc(result)
+    }
+
+    
+    calcNumbers(10, 20, printSample)
+
+    function printSample(myData){
+        console.log("Callback Result: ", myData)
+    }
+
+
+
+
+    
+
 </script>
 
 </html>

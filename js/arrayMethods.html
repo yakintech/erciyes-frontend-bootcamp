@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+
+    var countries2 = ["İsveç", "Finlandiya", "Norveç"]
+
+    //concat fonksiyonu 2 diziyi birleştirir!
+    //countries.concat(countries2)
+
+    //Yukarıdaki diziye yeni bir eleman ekliyorum
+    countries.push("Yunanistan")
+
+    //MEVCUT diziyi ters çevir
+    //countries.reverse()
+
+    //dizinin 1. elemanın ı ekrana yaz
+    console.log(countries[0]);
+
+
+    //Diziden bir eleman silmek istiyorum. İngiltere'yi silmek için önce index no bulacağım
+    var indexNo = countries.indexOf("İngiltere")
+    countries.splice(indexNo, 1)
+
+
+    //includes!!!
+    var dataControl = countries.includes("Almanya")
+    console.log(dataControl);
+
+    
+
+
+    
+
+
+</script>
+
+</html>
