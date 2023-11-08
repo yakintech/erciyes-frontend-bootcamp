@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Color</label>
+        <input type="color" name="" id="color">
+    </div>
+    <div>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+</body>
+<script>
+    //inputtan aldığı değere göre body background color değiştirsin
+
+    function changeColor(){
+        let color = document.getElementById("color").value
+        document.body.style.backgroundColor = color
+    }
+</script>
+</html>

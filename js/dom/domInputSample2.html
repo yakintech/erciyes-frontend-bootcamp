@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label for="">Genişlik:</label>
+        <input type="text" name="" id="width">
+    </div>
+    <div>
+        <label for="">Yükseklik:</label>
+        <input type="text" name="" id="height">
+    </div>
+    <div>
+        <button onclick="calc()">Hesapla</button>
+    </div>
+
+    <div id="box">
+
+    </div>
+    <script>
+        function calc() {
+            let x = document.getElementById("width").value
+            let y = document.getElementById("height").value
+
+            
+            document.getElementById("box").style.width = x + "px"
+            document.getElementById("box").style.height = y + "px"
+        }
+    </script>
+</body>
+
+</html>

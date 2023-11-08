@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">EMail</label>
+        <input type="text" name="" id="email">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" name="" id="password">
+    </div>
+    <div>
+        <button onclick="login()">Login</button>
+    </div>
+</body>
+<script>
+    function login(){
+        //butona bastığında kullanıcı adı cagatay@mail.com ve şifre 123 ise google.com a gitsin. Değilse ekrana kullanıcı adı veya şifre hatalı desin.
+
+        var email = document.getElementById("email").value
+        var password = document.getElementById("password").value
+
+        if(email == "cagatay@mail.com" && password == "123"){
+            window.location.href = "https://www.google.com"
+        }else{
+            alert("Kullanıcı adı veya şifre hatalı")
+        }
+
+
+    }
+</script>
+</html>

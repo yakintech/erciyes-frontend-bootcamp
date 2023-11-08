@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>0</h1>
+    <div>
+        <label for="">Number</label>
+        <input type="text" id="data" value="">
+    </div>
+    <div>
+        <button onclick="calc()">Calc</button>
+    </div>
+    <script>
+        // Ekrana bir adet input bir adet buton koy. Butona tıkladığında input a girdiği değerin KARESİNİ h1 içerisine yazsın
+
+        function calc(){
+            var number = document.getElementById('data').value;
+
+            var result = number * number;
+
+            document.querySelector("h1").innerText = result
+        }
+    </script>
+</body>
+
+</html>
