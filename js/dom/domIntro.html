@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">0</h1>
+    <button onclick="showText()">Show Text</button>
+</body>
+<script>
+
+    function showText(){
+        //bir elemente id vererek aşağıdaki fonksiyon yardımıyla yakalayabilirim!
+        //document.getElementById('title').innerText = "100"
+        //document.querySelector("#title").innerText = "100"
+
+        document.querySelector("h1").innerText = "100"
+
+    }
+
+</script>
+</html>

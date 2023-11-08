@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="randomChangeColor()">Change Color</button>
+    <div style="width: 500px; height: 500px;">
+
+    </div>
+
+
+<script>
+var colors = ["red", "yellow", "orange", "brown", "tomato", "black", "aqua", "white", "blue", "pink", "green", "gray"]
+
+//butona her bastığında yukarıdaki diziden rastgele bir elemanı alıp background color olarak versin
+function randomChangeColor(){
+
+    var randomIndex = Math.floor(Math.random() * colors.length)
+    document.querySelector("div").style.backgroundColor = colors[randomIndex]
+}
+</script>
+</body>
+
+</html>

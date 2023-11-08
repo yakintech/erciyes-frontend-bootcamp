@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 60px;
+            padding-right: 200px;
+            padding-left: 200px;
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="box">2</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button onclick="generate()" style="width: 200px; height: 100px;">ÇEKİLİŞ</button>
+    </div>
+
+    <script>
+        //Butona her bastığımda 1-49 arası rastgele 6 adet sayıyı kutulara yazdırsın
+
+        function generate() {
+            //Rastgele 1-49 arasında 6 adet sayı üretmek ve bu sayıları bir diziye push etmek istiyorum. Aynı sayı denk gelmemeli
+
+            var randomNumbers = []
+
+            for (i = 0; i < 6; i++) {
+                var randomNumber = Math.floor(Math.random() * 49)
+                randomNumbers.push(randomNumber)
+            }
+
+        }
+
+
+        var randomNumbers = []
+
+        for (i = 0; i < 6; i++) {
+            var randomNumber = Math.floor(Math.random() * 49)
+            randomNumbers.push(randomNumber)
+        }
+        
+        console.log(randomNumbers);
+
+    </script>
+</body>
+
+</html>
