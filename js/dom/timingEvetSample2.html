@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/640px-Koala_climbing_tree.jpg" alt="" srcset="">
+</body>
+<script>
+    // her yarım saniyede resmin genişlik ve yüksekliği RANDOM 0-800 arasında değişsin
+
+
+    setInterval(() => {
+
+        var x = Math.floor(Math.random() * 800)
+        var y = Math.floor(Math.random() * 800)
+
+        document.querySelector("img").style.width = x + "px"
+        document.querySelector("img").style.height = y + "px"
+    }, 500);
+</script>
+</html>

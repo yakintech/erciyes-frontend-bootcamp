@@ -31,12 +31,12 @@
 <body>
 
     <div id="container">
-        <div class="box">2</div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
     </div>
     <div style="display: flex; justify-content: center;">
         <button onclick="generate()" style="width: 200px; height: 100px;">ÇEKİLİŞ</button>
@@ -50,22 +50,19 @@
 
             var randomNumbers = []
 
-            for (i = 0; i < 6; i++) {
+            for (i = 1; i <= 6; i++) {
                 var randomNumber = Math.floor(Math.random() * 49)
-                randomNumbers.push(randomNumber)
+
+                if (randomNumbers.includes(randomNumber)) {
+                    i--
+                }
+                else {
+                    document.getElementById("box" + i).innerText = randomNumber
+                    randomNumbers.push(randomNumber)
+                }
+
             }
-
         }
-
-
-        var randomNumbers = []
-
-        for (i = 0; i < 6; i++) {
-            var randomNumber = Math.floor(Math.random() * 49)
-            randomNumbers.push(randomNumber)
-        }
-        
-        console.log(randomNumbers);
 
     </script>
 </body>
