@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Name:</label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <button onclick="add()">Add</button>
+    </div>
+    <div>
+        <ul>
+
+        </ul>
+    </div>
+</body>
+<script>
+    function add(){
+        // input içerisindeki değeri alıyorum
+        var name = document.getElementById("name").value;
+
+        // eğer input içerisinde bir değer yoksa fonksiyonu sonlandırıyorum
+        if(name.trim() == ""){
+            return;
+        }
+
+        // li oluşturuyorum
+        var li = document.createElement("li");
+        li.innerText = name;
+
+        // li yi ul içerisine ekliyorum
+        document.querySelector("ul").appendChild(li);
+
+        // input içerisindeki değeri siliyorum
+        document.getElementById("name").value = "";
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addRandom()">Add Random Li</button>
+
+    <ul>
+
+    </ul>
+</body>
+<script>
+    // Butan her tıkladığımda ul ye bir adet li eklesin ve içerisine RANDOM bir sayı yazsın.
+
+    function addRandom(){
+        // 1. Adım: Random bir sayı oluştur.
+        var randomNumber = Math.floor(Math.random() * 100);
+
+        // 2. Adım: Bu random sayıyı bir li içerisine yazdır.
+        var li = document.createElement("li");
+        li.innerText = randomNumber;
+
+        // 3. Adım: Bu li yi ul içerisine ekle.
+        document.querySelector("ul").appendChild(li);
+
+    }
+</script>
+</html>

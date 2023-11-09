@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Width</label>
+        <input type="text" id="width">
+    </div>
+    <div>
+        <label for="">Height</label>
+        <input type="text" id="height">
+    </div>
+    <div>
+        <button onclick="addNewDiv()">Add New Div</button>
+    </div>
+</body>
+<script>
+
+    function addNewDiv(){
+        var width = document.getElementById("width").value;
+        var height = document.getElementById("height").value;
+
+        if((width.trim() == "" || height.trim() == "") && (!isNaN(width) && !isNaN(height))){
+            return;
+        }
+
+        var div = document.createElement("div");
+        div.style.width = width + "px";
+        div.style.height = height + "px";
+        div.style.backgroundColor = "red";
+        div.style.margin = "10px";
+
+        document.body.appendChild(div);
+    }
+
+</script>
+</html>

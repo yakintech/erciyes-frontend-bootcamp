@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+</body>
+<script>
+    var countries = ["Türkiye", "Almanya","Japonya", "ABD", "İngiltere", "Yunanistan", "İran", "Suriye", "Irak", "Kıbrıs" ]
+
+    // countries dizisinin içerisinde foreach ile dönüyorum
+    countries.forEach((item) => {
+        // her bir item için bir li oluşturuyorum
+        var li = document.createElement("li");
+        li.innerText = item
+
+        // oluşturduğum li yi ul içerisine ekliyorum
+        document.querySelector("ul").appendChild(li);
+    })
+
+</script>
+</html>

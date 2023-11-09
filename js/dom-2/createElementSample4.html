@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="display: flex; justify-content: space-evenly;">
+        <ul id="cities">
+
+        </ul>
+
+        <ul id="favorites">
+
+        </ul>
+    </div>
+
+
+</body>
+<script>
+
+    //generate 10 cities
+    let cities = ["İzmir", "İstanbul", "Ankara", "Diyarbakır", "KAYSERİ", "Ordu", "Aydın", "Muğla", "Antalya", "Bursa"]
+
+    cities.forEach(city => {
+        let li = document.createElement("li")
+        li.style.cursor = "pointer"
+        li.innerText = city
+        document.getElementById("cities").appendChild(li)
+
+        // li.addEventListener("click", function () {
+        //     let li = document.createElement("li")
+        //     li.style.cursor = "pointer"
+        //     li.innerText = city
+        //     document.getElementById("favorites").appendChild(li)
+           
+        // })
+    })
+
+</script>
+
+</html>
