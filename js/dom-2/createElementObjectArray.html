@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+</body>
+<script>
+    var categories = [
+        {
+            id:1,
+            name:"Electronic",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        },
+        {
+            id:2,
+            name:"Book",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        },
+        {
+            id:3,
+            name:"Food",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        }
+    ]
+    
+    var ul = document.querySelector("ul");
+
+    categories.forEach(function(item){
+        var liElement = document.createElement("li");
+
+        liElement.innerHTML =item.id + " " + item.name + " " + item.description;
+        
+        ul.appendChild(liElement);
+    })
+
+
+
+    
+
+</script>
+</html>
